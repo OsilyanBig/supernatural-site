@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Supernatural — The Road So Far</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== INTRO EKRANI ==================== -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-content">
+            <div class="intro-text" id="intro-text">The Road So Far...</div>
+            <button class="intro-enter-btn" id="intro-enter-btn">
+                <span class="enter-icon">⛤</span>
+                <span>Kapıyı Aç</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== ANA SAYFA ==================== -->
+    <div id="main-screen" class="main-screen hidden">
+        
+        <!-- Üst Başlık -->
+        <header class="main-header">
+            <h1 class="site-title">SUPERNATURAL</h1>
+            <p class="site-subtitle">Hoş geldin, Azra. Avlanmaya hazır mısın?</p>
+        </header>
+
+        <!-- Navigasyon Masası -->
+        <div class="nav-desk">
+            
+            <!-- Quiz Kartı -->
+            <a href="quiz.html" class="nav-card" id="nav-quiz">
+                <div class="nav-card-inner">
+                    <div class="nav-card-icon">🔫</div>
+                    <h2 class="nav-card-title">Hunter's Trial</h2>
+                    <p class="nav-card-desc">Avcı Sınavı — Bilgini test et</p>
+                    <div class="nav-card-glow"></div>
+                </div>
+            </a>
+
+            <!-- Galeri Kartı -->
+            <a href="gallery.html" class="nav-card" id="nav-gallery">
+                <div class="nav-card-inner">
+                    <div class="nav-card-icon">📸</div>
+                    <h2 class="nav-card-title">Memory Wall</h2>
+                    <p class="nav-card-desc">Anılar Duvarı — En iyi sahneler</p>
+                    <div class="nav-card-glow"></div>
+                </div>
+            </a>
+
+            <!-- Mini Oyun Kartı -->
+            <a href="game.html" class="nav-card" id="nav-game">
+                <div class="nav-card-inner">
+                    <div class="nav-card-icon">📖</div>
+                    <h2 class="nav-card-title">The Hunt</h2>
+                    <p class="nav-card-desc">Av Peşinde — Gizemi çöz</p>
+                    <div class="nav-card-glow"></div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Impala Silüeti -->
+        <div class="impala-container">
+            <img src="assets/icons/impala.png" alt="1967 Chevy Impala" class="impala-img" onerror="this.style.display='none'">
+        </div>
+
+        <!-- Alt Bilgi -->
+        <footer class="main-footer">
+            <p class="footer-text">⛤ Saving People, Hunting Things. The Family Business. ⛤</p>
+        </footer>
+
+    </div>
+
+    <!-- Ses Efektleri (preload) -->
+    <audio id="sound-door" preload="auto">
+        <source src="assets/sounds/door-creak.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
