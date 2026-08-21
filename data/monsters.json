@@ -1,0 +1,122 @@
+{
+    "monsters": [
+        {
+            "id": "wendigo",
+            "name": "Wendigo",
+            "icon": "🦴",
+            "description": "Bir zamanlar insan olan, yamyamlığa başvurduktan sonra dönüşen yaratık. Ormanlarda yaşar.",
+            "signs": "Devasa pençe izleri, inanılmaz hız, kurbanların sesini taklit etme yeteneği. Avını karanlıkta yakalar.",
+            "weakness": "Ateş! Sadece ateşle öldürülebilir. Gümüş, tuz veya demir işe yaramaz.",
+            "weapon": "flare_gun"
+        },
+        {
+            "id": "shapeshifter",
+            "name": "Şekil Değiştiren (Shapeshifter)",
+            "icon": "🎭",
+            "description": "Herhangi bir insanın görünümünü alabilir. Derisini dökerek şekil değiştirir.",
+            "signs": "Deri döküntüleri, güvenlik kameralarında gözlerde retinal parlama, gümüşe temas ettiğinde yanma.",
+            "weakness": "Gümüş! Gümüş kurşun veya gümüş bıçak ölümcüldür.",
+            "weapon": "silver_bullet"
+        },
+        {
+            "id": "djinn",
+            "name": "Cin (Djinn)",
+            "icon": "🧞",
+            "description": "Kurbanlarına dokunarak onları bir rüya dünyasına hapseder ve kanlarını yavaşça emer.",
+            "signs": "Mavi parlayan dövmeler/semboller, kurbanlar koma benzeri bir rüya halinde, kanları yavaşça emilir.",
+            "weakness": "Kuzu kanına batırılmış gümüş bıçak.",
+            "weapon": "lamb_blood_blade"
+        },
+        {
+            "id": "trickster",
+            "name": "Trickster",
+            "icon": "🍭",
+            "description": "Gerçekliği bükebilen, şaka yapmayı seven güçlü bir varlık. Genellikle kibirli insanları cezalandırır.",
+            "signs": "Şekere düşkünlük, fizik kurallarını büken absürt olaylar, gerçek dışı durumlar yaratma.",
+            "weakness": "Kana bulanmış ahşap kazık kalbine saplanmalıdır.",
+            "weapon": "wooden_stake"
+        },
+        {
+            "id": "vampire",
+            "name": "Vampir",
+            "icon": "🧛",
+            "description": "Kan içerek hayatta kalan yaratık. Üst dişleri ikinci bir sıra halinde uzar.",
+            "signs": "Boyunda iki ısırık izi, kurbanlardan kan alınmış, gece aktif.",
+            "weakness": "Kafasının kesilmesi! Gümüş veya kazık işe yaramaz.",
+            "weapon": "decapitation"
+        },
+        {
+            "id": "werewolf",
+            "name": "Kurtadam (Werewolf)",
+            "icon": "🐺",
+            "description": "Dolunayda dönüşen (veya her zaman kontrol edebilen) insan-kurt melezi.",
+            "signs": "Kurbanların kalbi yenmiş, pençe izleri, dolunay döngüsü.",
+            "weakness": "Gümüş kurşun kalbe isabet etmeli.",
+            "weapon": "silver_bullet"
+        },
+        {
+            "id": "ghost",
+            "name": "Hayalet (Spirit)",
+            "icon": "👻",
+            "description": "Dünyaya bağlı kalmış bir ruh. Genellikle bir nesneye veya mekana bağlıdır.",
+            "signs": "Soğuk noktalar, EMF okuyucu tepkisi, eşyaların hareket etmesi.",
+            "weakness": "Kemiklerini bul, tuzla ve benzinle yak. Bağlı olduğu nesne varsa onu da yak.",
+            "weapon": "salt_and_burn"
+        },
+        {
+            "id": "demon",
+            "name": "İblis (Demon)",
+            "icon": "😈",
+            "description": "Cehennemden gelen, insan bedenlerine giren karanlık varlıklar.",
+            "signs": "Kükürt (sülfür) kokusu, siyah gözler, tuzdan geçemez, şeytan tuzağında mahsur kalır.",
+            "weakness": "Exorcism (kovma duası), Ruby'nin bıçağı, Colt tabancası.",
+            "weapon": "exorcism"
+        },
+        {
+            "id": "rugaru",
+            "name": "Rugaru",
+            "icon": "🍖",
+            "description": "Genetik olarak taşınan bir lanet. İnsan eti yeme dürtüsü artar ve tam dönüşüm yaşar.",
+            "signs": "Aşırı açlık, çiğ et yeme, gözlerde kayma, dişlerin sivrilmesi.",
+            "weakness": "Ateş! Yanmalıdır.",
+            "weapon": "flare_gun"
+        },
+        {
+            "id": "leviathan",
+            "name": "Leviathan",
+            "icon": "🦷",
+            "description": "Tanrı'nın yarattığı ilk canavarlar. Araf'ta hapsedilmişlerdi. İnsanların şeklini alabilirler.",
+            "signs": "Siyah sıvı, insanları kopyalama, normal silahlar hiç işlemez.",
+            "weakness": "Boraks (temizlik maddesi) yakar, ölümcül değil. Kalıcı çözüm: Righteous Bone (Aziz kemiği).",
+            "weapon": "borax"
+        },
+        {
+            "id": "shtriga",
+            "name": "Shtriga",
+            "icon": "🧙",
+            "description": "Çocukların yaşam enerjisini emen cadı benzeri yaratık. Genellikle bir toplulukta gizlenir.",
+            "signs": "Çocuklar açıklanamayan hastalıklara yakalanır, ağızdan yaşam enerjisi çekilir.",
+            "weakness": "Beslenirken vurulmalı! Gümüş konsantre mermiler.",
+            "weapon": "silver_bullet"
+        },
+        {
+            "id": "ghoul",
+            "name": "Ghoul",
+            "icon": "💀",
+            "description": "Ölülerin şeklini alan ve cesetleri yiyen yaratık. Mezarlıklarda yaşar.",
+            "signs": "Mezar kazıları, cesetlerin kaybolması, ölü birinin 'geri dönmesi'.",
+            "weakness": "Kafasına sert darbe veya kafanın kesilmesi.",
+            "weapon": "decapitation"
+        }
+    ],
+    "weapons": [
+        {"id": "flare_gun", "name": "🔥 İşaret Fişeği / Alev", "desc": "Ateşe duyarlı yaratıklar için"},
+        {"id": "silver_bullet", "name": "🔫 Gümüş Kurşun", "desc": "Gümüşe duyarlı yaratıklar için"},
+        {"id": "lamb_blood_blade", "name": "🗡️ Kuzu Kanına Batırılmış Gümüş Bıçak", "desc": "Cinler için özel silah"},
+        {"id": "wooden_stake", "name": "🪵 Kana Bulanmış Ahşap Kazık", "desc": "Trickster'lar için"},
+        {"id": "decapitation", "name": "⚔️ Kafa Kesme", "desc": "Bazı yaratıklar sadece böyle ölür"},
+        {"id": "salt_and_burn", "name": "🔥 Tuzla ve Yak", "desc": "Hayaletlerin kemiklerini yok et"},
+        {"id": "exorcism", "name": "📜 Exorcism Duası", "desc": "İblisleri kovmak için Latince dua"},
+        {"id": "borax", "name": "🧪 Boraks", "desc": "Leviathan'ları zayıflatır"}
+    ]
+}
