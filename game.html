@@ -27,7 +27,10 @@
                 <p>Mekanları incele, ipuçlarını topla, günlükten canavarı bul ve doğru silahı seç.</p>
             </div>
             <button class="spn-btn primary" id="game-start-btn">
-                <span>⛤</span> Ava Çık
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2 L14.5 9 L22 9 L16 13.5 L18.5 21 L12 16.5 L5.5 21 L8 13.5 L2 9 L9.5 9 Z"/>
+                </svg>
+                <span>Ava Çık</span>
             </button>
         </div>
 
@@ -51,7 +54,14 @@
                     <span>İpuçları:</span>
                     <span id="clues-found">0</span> / <span id="clues-total">3</span>
                 </div>
-                <button class="journal-toggle-btn" id="journal-toggle-btn">📖 Günlük</button>
+                <button class="journal-toggle-btn" id="journal-toggle-btn">
+                    <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 4h13a3 3 0 013 3v13a1 1 0 01-1 1H7a3 3 0 01-3-3V4z"/>
+                        <line x1="8" y1="8" x2="15" y2="8"/>
+                        <line x1="8" y1="12" x2="15" y2="12"/>
+                    </svg>
+                    <span>Günlük</span>
+                </button>
             </div>
 
             <!-- Mekan Görseli + Tıklanabilir Alanlar -->
@@ -70,7 +80,11 @@
 
             <!-- Çözüm Butonu (tüm ipuçları bulununca aktif) -->
             <button class="spn-btn primary solve-btn hidden" id="solve-btn">
-                🔍 Canavarı Belirle
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16" y2="16"/>
+                </svg>
+                <span>Canavarı Belirle</span>
             </button>
         </div>
 
@@ -92,7 +106,11 @@
         <!-- Vaka Çözüldü Ekranı -->
         <div id="case-solved" class="case-solved hidden">
             <div class="solved-card">
-                <div class="solved-icon">⛤</div>
+                <div class="solved-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M12 2 L14.5 9 L22 9 L16 13.5 L18.5 21 L12 16.5 L5.5 21 L8 13.5 L2 9 L9.5 9 Z"/>
+                    </svg>
+                </div>
                 <h2 class="solved-title" id="solved-title">Vaka Çözüldü!</h2>
                 <p class="solved-text" id="solved-text">Wendigo'yu yendin!</p>
                 <button class="spn-btn primary" id="next-case-btn">Sonraki Vaka →</button>
@@ -120,7 +138,7 @@
         <div class="journal-overlay hidden" id="journal-overlay">
             <div class="journal-book">
                 <div class="journal-header">
-                    <h2 class="journal-title">📖 John Winchester'ın Günlüğü</h2>
+                    <h2 class="journal-title"> John Winchester'ın Günlüğü</h2>
                     <button class="journal-close-btn" id="journal-close-btn">✕</button>
                 </div>
                 <div class="journal-pages" id="journal-pages">
