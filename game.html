@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Supernatural — The Hunt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Geri Butonu -->
+    <a href="index.html" class="back-btn" id="back-btn-game">
+        <span>← Sığınağa Dön</span>
+    </a>
+
+    <!-- Oyun Ana Container -->
+    <div class="game-container">
+
+        <!-- Oyun Başlangıç Ekranı -->
+        <div id="game-start" class="game-start">
+            <h1 class="page-title">The Hunt</h1>
+            <p class="page-subtitle">Av Peşinde</p>
+            <div class="game-intro-text">
+                <p>4 vaka. 4 canavar. 1 avcı.</p>
+                <p>Mekanları incele, ipuçlarını topla, günlükten canavarı bul ve doğru silahı seç.</p>
+            </div>
+            <button class="spn-btn primary" id="game-start-btn">
+                <span>⛤</span> Ava Çık
+            </button>
+        </div>
+
+        <!-- Vaka Tanıtım Ekranı -->
+        <div id="case-intro" class="case-intro hidden">
+            <div class="case-file">
+                <h2 class="case-number" id="case-number">VAKA #1</h2>
+                <h3 class="case-title" id="case-title">Kayıp Sesler</h3>
+                <p class="case-description" id="case-description">Ormanda kampcılar kayboluyor...</p>
+                <button class="spn-btn primary" id="case-go-btn">Mekanı İncele →</button>
+            </div>
+        </div>
+
+        <!-- Oyun Sahne Ekranı -->
+        <div id="game-scene" class="game-scene hidden">
+            
+            <!-- Üst Bilgi Barı -->
+            <div class="scene-hud">
+                <div class="case-badge" id="scene-case-badge">Vaka #1</div>
+                <div class="clues-counter">
+                    <span>İpuçları:</span>
+                    <span id="clues-found">0</span> / <span id="clues-total">3</span>
+                </div>
+                <button class="journal-toggle-btn" id="journal-toggle-btn">📖 Günlük</button>
+            </div>
+
+            <!-- Mekan Görseli + Tıklanabilir Alanlar -->
+            <div class="scene-image-container" id="scene-image-container">
+                <img src="" alt="Mekan" class="scene-bg" id="scene-bg">
+                <!-- Tıklanabilir alanlar JS ile eklenir -->
+            </div>
+
+            <!-- Bulunan İpuçları Listesi -->
+            <div class="clues-panel" id="clues-panel">
+                <h3 class="clues-panel-title">Bulunan İpuçları</h3>
+                <ul class="clues-list" id="clues-list">
+                    <!-- JS ile doldurulur -->
+                </ul>
+            </div>
+
+            <!-- Çözüm Butonu (tüm ipuçları bulununca aktif) -->
+            <button class="spn-btn primary solve-btn hidden" id="solve-btn">
+                🔍 Canavarı Belirle
+            </button>
+        </div>
+
+        <!-- Çözüm Ekranı (Canavar + Silah Seçimi) -->
+        <div id="game-solve" class="game-solve hidden">
+            <div class="solve-card">
+                <h2 class="solve-title">Bu canavar ne?</h2>
+                <div class="monster-options" id="monster-options">
+                    <!-- JS ile doldurulur -->
+                </div>
+
+                <h2 class="solve-title weapon-title hidden" id="weapon-title">Silahını seç!</h2>
+                <div class="weapon-options hidden" id="weapon-options">
+                    <!-- JS ile doldurulur -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Vaka Çözüldü Ekranı -->
+        <div id="case-solved" class="case-solved hidden">
+            <div class="solved-card">
+                <div class="solved-icon">⛤</div>
+                <h2 class="solved-title" id="solved-title">Vaka Çözüldü!</h2>
+                <p class="solved-text" id="solved-text">Wendigo'yu yendin!</p>
+                <button class="spn-btn primary" id="next-case-btn">Sonraki Vaka →</button>
+            </div>
+        </div>
+
+        <!-- FINAL EKRANI (Vaka 4 sonrası) -->
+        <div id="game-finale" class="game-finale hidden">
+            <div class="finale-content">
+                <div class="snap-effect" id="snap-effect">*snap*</div>
+                <div class="finale-message hidden" id="finale-message">
+                    <div class="finale-impala">
+                        <img src="assets/icons/impala.png" alt="Impala" class="finale-impala-img" onerror="this.style.display='none'">
+                    </div>
+                    <p class="finale-text">
+                        Sen sadece buradaki canavarları avlamadın benim küçük kalbimi de avladın :)
+                    </p>
+                    <p class="finale-hunter-name">— Gerçek bir avcı: Azra ⛤</p>
+                    <a href="index.html" class="spn-btn primary finale-btn">Sığınağa Dön</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GÜNLÜK (Canavarlar Kitabı) - Overlay -->
+        <div class="journal-overlay hidden" id="journal-overlay">
+            <div class="journal-book">
+                <div class="journal-header">
+                    <h2 class="journal-title">📖 John Winchester'ın Günlüğü</h2>
+                    <button class="journal-close-btn" id="journal-close-btn">✕</button>
+                </div>
+                <div class="journal-pages" id="journal-pages">
+                    <!-- JS ile doldurulur: monsters.json'dan -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Ses Efektleri -->
+    <audio id="sound-page" preload="auto">
+        <source src="assets/sounds/page-turn.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-snap" preload="auto">
+        <source src="assets/sounds/finger-snap.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-engine" preload="auto">
+        <source src="assets/sounds/engine-start.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-shotgun" preload="auto">
+        <source src="assets/sounds/shotgun-cock.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
