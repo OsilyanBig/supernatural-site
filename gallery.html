@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Supernatural — Memory Wall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Geri Butonu -->
+    <a href="index.html" class="back-btn">
+        <span>← Sığınağa Dön</span>
+    </a>
+
+    <!-- Galeri Container -->
+    <div class="gallery-container">
+        
+        <header class="gallery-header">
+            <h1 class="page-title">Memory Wall</h1>
+            <p class="page-subtitle">Anılar Duvarı — The Road So Far</p>
+        </header>
+
+        <!-- Mantar Pano -->
+        <div class="cork-board" id="cork-board">
+            
+            <!-- Polaroidler JS ile de eklenebilir ama statik de yazabiliriz -->
+            <div class="polaroid" style="--rotate: -3deg; --delay: 0.1s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo1.jpg" alt="Sahne 1" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Brothers</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: 2deg; --delay: 0.2s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo2.jpg" alt="Sahne 2" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Team Free Will</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: -1deg; --delay: 0.3s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo3.jpg" alt="Sahne 3" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Pudding!</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: 4deg; --delay: 0.4s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo4.jpg" alt="Sahne 4" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">The Impala</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: -2deg; --delay: 0.5s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo5.jpg" alt="Sahne 5" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Cas</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: 3deg; --delay: 0.6s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo6.jpg" alt="Sahne 6" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Jerk. Bitch.</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: -4deg; --delay: 0.7s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo7.jpg" alt="Sahne 7" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">Family Business</p>
+            </div>
+
+            <div class="polaroid" style="--rotate: 1deg; --delay: 0.8s">
+                <div class="polaroid-img-wrapper">
+                    <img src="assets/photos/photo8.jpg" alt="Sahne 8" onerror="this.parentElement.classList.add('no-img')">
+                </div>
+                <p class="polaroid-caption">The Road So Far</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Kasetçalar (Sabit Alt Bar) -->
+    <div class="cassette-player" id="cassette-player">
+        <div class="cassette-header">
+            <span class="cassette-icon">📼</span>
+            <span class="cassette-title" id="cassette-title">Kaset Seç</span>
+        </div>
+        
+        <div class="cassette-controls">
+            <button class="tape-btn" data-tape="0" id="tape-0">
+                <span class="tape-label">Carry On</span>
+            </button>
+            <button class="tape-btn" data-tape="1" id="tape-1">
+                <span class="tape-label">Eye of Tiger</span>
+            </button>
+            <button class="tape-btn" data-tape="2" id="tape-2">
+                <span class="tape-label">Heat of Moment</span>
+            </button>
+        </div>
+
+        <!-- YouTube Embed (gizli) -->
+        <div class="yt-embed-container" id="yt-embed-container">
+            <div id="yt-player"></div>
+        </div>
+
+        <button class="cassette-toggle" id="cassette-toggle">
+            <span class="toggle-arrow">▲</span>
+        </button>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
