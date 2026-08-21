@@ -1565,14 +1565,17 @@ img {
     border: 3px solid #5c3a1c;
     border-radius: 6px;
     max-width: 480px;
-    max-height: 85vh;
+    width: 100%;
+    max-height: 80vh; /* Ekran yüksekliğinin %80'ini aşamaz */
     box-shadow: 
         0 10px 40px rgba(0, 0, 0, 0.8),
         0 0 60px rgba(139, 0, 0, 0.15),
         inset 0 0 50px rgba(0, 0, 0, 0.5),
         inset 0 0 100px rgba(74, 50, 24, 0.3);
     position: relative;
-    overflow: hidden;
+    display: flex;            /* Ekledik: Başlık ve sayfaları dikey bölecek */
+    flex-direction: column;   /* Ekledik */
+    overflow: hidden;         /* Değiştirdik: Kitabın kendisi taşmayacak */
 }
 
 /* Kitap dikişi efekti */
@@ -1618,8 +1621,7 @@ img {
     border-bottom: 2px solid #5c3a1c;
     padding: 18px 22px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
+    flex-shrink: 0;          /* Ekledik: Başlık asla yukarı büzüşmeyecek */
     z-index: 10;
 }
 
@@ -1678,6 +1680,9 @@ img {
         radial-gradient(ellipse at center top, 
             rgba(212, 197, 169, 0.03) 0%, 
             transparent 70%);
+    flex-grow: 1;            /* Ekledik: Kalan tüm boşluğu doldur */
+    overflow-y: auto;        /* Ekledik: Sadece sayfalar dikey kaydırılsın */
+    -webkit-overflow-scrolling: touch; /* Ekledik: iOS parmak kaydırma akıcılığı */
     position: relative;
     z-index: 2;
 }
