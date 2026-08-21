@@ -1244,18 +1244,20 @@ img {
 
 .journal-book {
     background: 
-        linear-gradient(145deg, #3a2815, #2c1e10);
-    border: 2px solid rgba(201, 168, 76, 0.4);
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
-    max-height: 80vh;
-    overflow-y: auto;
+        linear-gradient(135deg, #4a3218 0%, #3a2510 50%, #2c1e10 100%);
+    border: 3px solid #5c3a1c;
+    border-radius: 6px;
+    max-width: 480px;
+    max-height: 85vh;
     box-shadow: 
-        0 4px 30px rgba(0,0,0,0.5),
-        inset 0 0 30px rgba(0,0,0,0.3);
-    /* Deri dokusu — asset gelince aktif et */
-    /* background-image: url('../assets/textures/leather.jpg'); */
+        0 10px 40px rgba(0, 0, 0, 0.8),
+        0 0 60px rgba(139, 0, 0, 0.15),
+        inset 0 0 50px rgba(0, 0, 0, 0.5),
+        inset 0 0 100px rgba(74, 50, 24, 0.3);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .journal-header {
