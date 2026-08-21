@@ -10,53 +10,69 @@
 </head>
 <body>
 
-    <!-- ==================== INTRO EKRANI ==================== -->
+    <!-- INTRO EKRANI -->
     <div id="intro-screen" class="intro-screen">
         <div class="intro-content">
             <div class="intro-text" id="intro-text">The Road So Far...</div>
             <button class="intro-enter-btn" id="intro-enter-btn">
-                <span class="enter-icon">⛤</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2 L14 8 L20 8 L15 12 L17 20 L12 16 L7 20 L9 12 L4 8 L10 8 Z"/>
+                </svg>
                 <span>Kapıyı Aç</span>
             </button>
         </div>
     </div>
 
-    <!-- ==================== ANA SAYFA ==================== -->
+    <!-- ANA SAYFA -->
     <div id="main-screen" class="main-screen hidden">
         
-        <!-- Üst Başlık -->
         <header class="main-header">
             <h1 class="site-title">SUPERNATURAL</h1>
             <p class="site-subtitle">Hoş geldin, Azra. Avlanmaya hazır mısın?</p>
         </header>
 
-        <!-- Navigasyon Masası -->
         <div class="nav-desk">
             
-            <!-- Quiz Kartı -->
             <a href="quiz.html" class="nav-card" id="nav-quiz">
                 <div class="nav-card-inner">
-                    <div class="nav-card-icon">🔫</div>
+                    <div class="nav-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                            <path d="M3 12h4l2-6 4 12 2-6h6"/>
+                            <circle cx="12" cy="12" r="10" stroke-dasharray="2 2"/>
+                        </svg>
+                    </div>
                     <h2 class="nav-card-title">Hunter's Trial</h2>
                     <p class="nav-card-desc">Avcı Sınavı — Bilgini test et</p>
                     <div class="nav-card-glow"></div>
                 </div>
             </a>
 
-            <!-- Galeri Kartı -->
             <a href="gallery.html" class="nav-card" id="nav-gallery">
                 <div class="nav-card-inner">
-                    <div class="nav-card-icon">📸</div>
+                    <div class="nav-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            <circle cx="9" cy="11" r="2"/>
+                            <path d="M3 17l5-5 4 4 3-3 6 6"/>
+                        </svg>
+                    </div>
                     <h2 class="nav-card-title">Memory Wall</h2>
                     <p class="nav-card-desc">Anılar Duvarı — En iyi sahneler</p>
                     <div class="nav-card-glow"></div>
                 </div>
             </a>
 
-            <!-- Mini Oyun Kartı -->
             <a href="game.html" class="nav-card" id="nav-game">
                 <div class="nav-card-inner">
-                    <div class="nav-card-icon">📖</div>
+                    <div class="nav-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                            <path d="M4 4h13a3 3 0 013 3v13a1 1 0 01-1 1H7a3 3 0 01-3-3V4z"/>
+                            <path d="M4 4v13a3 3 0 003 3"/>
+                            <line x1="8" y1="8" x2="15" y2="8"/>
+                            <line x1="8" y1="12" x2="15" y2="12"/>
+                        </svg>
+                    </div>
                     <h2 class="nav-card-title">The Hunt</h2>
                     <p class="nav-card-desc">Av Peşinde — Gizemi çöz</p>
                     <div class="nav-card-glow"></div>
@@ -65,19 +81,20 @@
 
         </div>
 
-        <!-- Impala Silüeti -->
         <div class="impala-container">
             <img src="assets/icons/impala.png" alt="1967 Chevy Impala" class="impala-img" onerror="this.style.display='none'">
         </div>
 
-        <!-- Alt Bilgi -->
         <footer class="main-footer">
-            <p class="footer-text">⛤ Saving People, Hunting Things. The Family Business. ⛤</p>
+            <p class="footer-text">
+                <span class="footer-star">✦</span>
+                Saving People, Hunting Things. The Family Business.
+                <span class="footer-star">✦</span>
+            </p>
         </footer>
 
     </div>
 
-    <!-- Ses Efektleri (preload) -->
     <audio id="sound-door" preload="auto">
         <source src="assets/sounds/door-creak.mp3" type="audio/mpeg">
     </audio>
