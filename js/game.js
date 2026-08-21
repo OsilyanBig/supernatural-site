@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const entry = document.createElement('div');
             entry.className = 'journal-entry';
             entry.innerHTML = `
-                <div class="monster-name">${m.icon} ${m.name}</div>
+                <div class="monster-name">${m.name}</div>
                 <div class="monster-info">
                     ${m.description}
                     <strong>İZLERİ:</strong>
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const m = monstersData.monsters.find(mon => mon.id === id);
             const btn = document.createElement('button');
             btn.className = 'monster-opt-btn';
-            btn.textContent = `${m.icon} ${m.name}`;
+            btn.textContent = m.name;
             btn.dataset.monsterId = id;
             btn.addEventListener('click', () => selectMonster(id));
             monsterOptions.appendChild(btn);
