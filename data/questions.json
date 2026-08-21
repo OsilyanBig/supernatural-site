@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "question": "Dean'in aracının modeli nedir?",
+        "options": ["1965 Ford Mustang", "1967 Chevrolet Impala", "1970 Dodge Charger", "1969 Pontiac GTO"],
+        "correct": 1,
+        "explanation": "Baby! 1967 Chevrolet Impala, dizinin en önemli karakterlerinden biri."
+    },
+    {
+        "id": 2,
+        "question": "Sam Winchester'ın en büyük korkusu nedir?",
+        "options": ["Karanlık", "Palyaçolar", "Yılanlar", "Yükseklik"],
+        "correct": 1,
+        "explanation": "Sam'in palyaço fobisi var! 2. sezon 'Everybody Loves a Clown' bölümünde ortaya çıkıyor."
+    },
+    {
+        "id": 3,
+        "question": "Sarı Gözlü İblisin (Yellow-Eyed Demon) adı nedir?",
+        "options": ["Lilith", "Azazel", "Crowley", "Alastair"],
+        "correct": 1,
+        "explanation": "Azazel, Winchester ailesinin hayatını mahveden baş düşman. Sezon 1-2'nin ana kötüsü."
+    },
+    {
+        "id": 4,
+        "question": "Castiel ilk olarak hangi sezonda ortaya çıkar?",
+        "options": ["Sezon 2", "Sezon 3", "Sezon 4", "Sezon 5"],
+        "correct": 2,
+        "explanation": "Castiel, Sezon 4'ün ilk bölümünde Dean'i cehennemden çıkararak sahneye giriyor."
+    },
+    {
+        "id": 5,
+        "question": "Dean'in cehennemde geçirdiği süre (dünya zamanıyla) ne kadardır?",
+        "options": ["4 ay", "6 ay", "1 yıl", "2 yıl"],
+        "correct": 0,
+        "explanation": "Dünya zamanıyla 4 ay, ama cehennem zamanıyla 40 yıl! Sezon 3 finalinde ölür, Sezon 4 başında geri döner."
+    },
+    {
+        "id": 6,
+        "question": "'Mystery Spot' bölümünde Salı günü sürekli tekrar ederken her sabah çalan şarkı hangisidir?",
+        "options": ["Carry On Wayward Son", "Back in Black", "Heat of the Moment", "Eye of the Tiger"],
+        "correct": 2,
+        "explanation": "Asia - Heat of the Moment! Gabriel (Trickster) Dean'i sürekli öldürerek Sam'e bir ders vermeye çalışıyordu."
+    },
+    {
+        "id": 7,
+        "question": "Bobby Singer'ın ünlü 'idjit' dışındaki meşhur sözü nedir?",
+        "options": ["Balls!", "Dammit!", "Son of a!", "Hell no!"],
+        "correct": 0,
+        "explanation": "Bobby'nin ikonik 'Balls!' lafı dizinin en unutulmaz repliklerinden biri."
+    },
+    {
+        "id": 8,
+        "question": "Crowley cehennemde iken mesleği neydi (insan olarak)?",
+        "options": ["Kasap", "Terzi", "Edebi Ajan (Yazar Temsilcisi)", "Avukat"],
+        "correct": 2,
+        "explanation": "Crowley İskoç bir terzi olarak bahsedilse de, aslında kendisi 'King of the Crossroads' olmadan önce 17. yüzyılda yaşamış Fergus Roderick MacLeod adında biriydi."
+    },
+    {
+        "id": 9,
+        "question": "Leviathan'ların lideri kimdir?",
+        "options": ["Eve", "Dick Roman", "Metatron", "Abaddon"],
+        "correct": 1,
+        "explanation": "Dick Roman! Sezon 7'nin ana kötüsü. Leviathan'lar Araf'tan (Purgatory) kaçarak dünyaya geldi."
+    },
+    {
+        "id": 10,
+        "question": "Winchester kardeşlerin annesi Mary Winchester'ı öldüren iblis kimdir?",
+        "options": ["Lilith", "Azazel", "Meg", "Ruby"],
+        "correct": 1,
+        "explanation": "Azazel (Sarı Gözlü İblis), Sam'in bebekken odasına girip ona iblis kanı damlattığında Mary bunu fark edince onu tavana yapıştırıp yaktı."
+    }
+]
