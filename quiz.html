@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Supernatural — Hunter's Trial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Geri Butonu -->
+    <a href="index.html" class="back-btn" id="back-btn">
+        <span>← Sığınağa Dön</span>
+    </a>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        
+        <!-- Başlangıç Ekranı -->
+        <div id="quiz-start" class="quiz-start">
+            <h1 class="page-title">Hunter's Trial</h1>
+            <p class="page-subtitle">Avcı Sınavı</p>
+            <div class="quiz-intro-text">
+                <p>10 soru. Sadece ilk 12 sezon.</p>
+                <p>Her doğru cevap seni gerçek bir avcıya yaklaştırır.</p>
+            </div>
+            <button class="spn-btn primary" id="quiz-start-btn">
+                <span>⛤</span> Sınava Başla
+            </button>
+        </div>
+
+        <!-- Soru Ekranı -->
+        <div id="quiz-question" class="quiz-question hidden">
+            <!-- Soru Numarası -->
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                </div>
+                <span class="quiz-progress-text" id="quiz-progress-text">1 / 10</span>
+            </div>
+
+            <!-- Soru Kartı -->
+            <div class="question-card">
+                <p class="question-text" id="question-text">Soru buraya gelecek?</p>
+            </div>
+
+            <!-- Cevap Butonları -->
+            <div class="answers-grid" id="answers-grid">
+                <!-- JS ile doldurulacak -->
+            </div>
+
+            <!-- Sonuç Feedback -->
+            <div class="answer-feedback hidden" id="answer-feedback">
+                <p class="feedback-text" id="feedback-text"></p>
+                <button class="spn-btn secondary" id="next-question-btn">Sonraki Soru →</button>
+            </div>
+        </div>
+
+        <!-- Sonuç Ekranı -->
+        <div id="quiz-result" class="quiz-result hidden">
+            <div class="result-card">
+                <h2 class="result-title" id="result-title">Sonuç</h2>
+                <div class="result-score">
+                    <span class="score-number" id="score-number">0</span>
+                    <span class="score-total">/ 10</span>
+                </div>
+                <p class="result-message" id="result-message">Mesaj</p>
+                <div class="result-buttons">
+                    <button class="spn-btn primary" id="quiz-retry-btn">Tekrar Dene</button>
+                    <a href="index.html" class="spn-btn secondary">Sığınağa Dön</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Ses Efektleri -->
+    <audio id="sound-correct" preload="auto">
+        <source src="assets/sounds/shotgun-cock.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-wrong" preload="auto">
+        <source src="assets/sounds/demon-whisper.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
